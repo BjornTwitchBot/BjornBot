@@ -1,0 +1,4 @@
+BjornBot
+========
+
+Simple IRC Bot
