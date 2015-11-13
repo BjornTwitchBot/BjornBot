@@ -1,4 +1,4 @@
-package sens
+package main
 
 import (
 	"fmt"

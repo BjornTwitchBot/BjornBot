@@ -1,4 +1,4 @@
-package rank
+package main
 
 import (
 	"fmt"
