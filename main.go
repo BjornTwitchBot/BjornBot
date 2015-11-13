@@ -1,10 +1,9 @@
 package main
 
 import (
+	_ "github.com/Bjorn248/BjornBot/commands/rank"
+	_ "github.com/Bjorn248/BjornBot/commands/sens"
 	"github.com/fabioxgn/go-bot"
-	_ "github.com/fabioxgn/go-bot/commands/catfacts"
-	_ "github.com/fabioxgn/go-bot/commands/catgif"
-	_ "github.com/fabioxgn/go-bot/commands/chucknorris"
 	// Import all the commands you wish to use
 	"os"
 	"strings"
