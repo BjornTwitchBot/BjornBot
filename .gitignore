@@ -27,3 +27,4 @@ _testmain.go
 start.sh
 start_without_build.sh
 bjornbot
+docker/bjornbot_linux
