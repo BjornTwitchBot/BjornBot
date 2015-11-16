@@ -1,8 +1,12 @@
 language: go
+sudo: false
+services:
+    - docker
 go:
     - tip
 script: GOOS=linux GOARCH=amd64 go build -o ./docker/bjornbot_linux *.go
-sudo: false
 after_success:
     - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-    - cd docker; docker build -t bjorn248/bjornbot .; docker push bjorn248/bjornbot
+    - cd docker
+    - docker build -t bjorn248/bjornbot .
+    - docker push bjorn248/bjornbot
