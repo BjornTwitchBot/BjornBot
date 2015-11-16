@@ -5,7 +5,8 @@ services:
 go:
     - 1.5.1
 script:
-    - ./build_for_docker.sh
+    - go get github.com/mitchellh/gox
+    - gox -osarch="linux/amd64" -output="docker/bjornbot_linux"
     - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
     - cd docker
     - ls -lash
