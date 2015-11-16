@@ -3,9 +3,9 @@ sudo: false
 services:
     - docker
 go:
-    - tip
-script: GOOS=linux GOARCH=amd64 go build -o ./docker/bjornbot_linux *.go
-after_success:
+    - 1.5.1
+script:
+    - GOOS=linux GOARCH=amd64 go build -o ./docker/bjornbot_linux *.go
     - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
     - cd docker
     - docker build -t bjorn248/bjornbot .
