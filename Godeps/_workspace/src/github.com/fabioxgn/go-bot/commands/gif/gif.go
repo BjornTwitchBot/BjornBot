@@ -2,8 +2,8 @@ package gif
 
 import (
 	"fmt"
-	"github.com/fabioxgn/go-bot"
-	"github.com/fabioxgn/go-bot/web"
+	"github.com/BjornTwitchBot/BjornBot/Godeps/_workspace/src/github.com/fabioxgn/go-bot"
+	"github.com/BjornTwitchBot/BjornBot/Godeps/_workspace/src/github.com/fabioxgn/go-bot/web"
 	"math/rand"
 	"net/url"
 	"time"

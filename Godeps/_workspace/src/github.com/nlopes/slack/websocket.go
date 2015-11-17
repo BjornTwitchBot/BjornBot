@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	"golang.org/x/net/websocket"
+	"github.com/BjornTwitchBot/BjornBot/Godeps/_workspace/src/golang.org/x/net/websocket"
 )
 
 const (

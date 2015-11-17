@@ -438,7 +438,8 @@ func (irc *Connection) Connect(server string) error {
 	irc.Add(3)
 	go irc.readLoop()
 	go irc.writeLoop()
-	go irc.pingLoop()
+	// Comment out pingloop for now
+	// go irc.pingLoop()
 	if len(irc.Password) > 0 {
 		irc.pwrite <- fmt.Sprintf("PASS %s\r\n", irc.Password)
 	}

@@ -9,7 +9,6 @@ script:
 - gox -osarch="linux/amd64" -output="docker/bjornbot_linux"
 - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 - cd docker
-- ls -lash
 - docker build -t bjorn248/bjornbot .
 - docker push bjorn248/bjornbot
 - cd ..

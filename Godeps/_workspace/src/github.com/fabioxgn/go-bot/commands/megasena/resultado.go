@@ -2,7 +2,7 @@ package megasena
 
 import (
 	"fmt"
-	"github.com/fabioxgn/go-bot/web"
+	"github.com/BjornTwitchBot/BjornBot/Godeps/_workspace/src/github.com/fabioxgn/go-bot/web"
 )
 
 var (
