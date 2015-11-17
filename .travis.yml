@@ -19,3 +19,6 @@ deploy:
   app: bjornbot
   on:
     repo: BjornTwitchBot/BjornBot
+branches:
+  only:
+    - master
