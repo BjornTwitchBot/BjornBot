@@ -12,6 +12,7 @@ script:
 - ls -lash
 - docker build -t bjorn248/bjornbot .
 - docker push bjorn248/bjornbot
+- cd ..
 deploy:
   provider: heroku
   api_key:
