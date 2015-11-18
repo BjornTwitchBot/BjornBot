@@ -1,13 +1,13 @@
 package main
 
 import (
+	"fmt"
 	"github.com/BjornTwitchBot/BjornBot/Godeps/_workspace/src/github.com/fabioxgn/go-bot"
 )
 
 func rank(command *bot.Cmd) (msg string, err error) {
-	rankcs(command)
-	ranklol(command)
-	return "", nil
+	msg = fmt.Sprintf("CS:GO - Supreme Master First Class")
+	return
 }
 
 func init() {
