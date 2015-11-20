@@ -6,7 +6,7 @@ import (
 )
 
 func sens(command *bot.Cmd) (msg string, err error) {
-	msg = fmt.Sprintf("2.1 in game @ 400 DPI")
+	msg = fmt.Sprintf("0.95 in game @ 1000 DPI")
 	return
 }
 
