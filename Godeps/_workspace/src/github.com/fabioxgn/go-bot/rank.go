@@ -10,5 +10,5 @@ const (
 
 func rank(c *Cmd, channel, senderNick string, conn connection) {
 	conn.Privmsg(channel, fmt.Sprintf("League of Legends - Gold V"))
-	conn.Privmsg(channel, fmt.Sprintf("CS:GO - Supreme Master First Class"))
+	conn.Privmsg(channel, fmt.Sprintf("CS:GO - Legendary Eagle Master"))
 }
