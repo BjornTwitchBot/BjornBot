@@ -7,6 +7,14 @@
 			"Rev": "4b8afdebbb46013946db9cd3c6a8c8e6f40495bd"
 		},
 		{
+			"ImportPath": "github.com/google/go-querystring/query",
+			"Rev": "547ef5ac979778feb2f760cdb5f4eae1a2207b86"
+		},
+		{
+			"ImportPath": "github.com/mrshankly/go-twitch/twitch",
+			"Rev": "3db6df7a8cb2f40c1ad121d04e12549182406fa3"
+		},
+		{
 			"ImportPath": "github.com/nlopes/slack",
 			"Comment": "v0.0.1-67-gbfabccf",
 			"Rev": "bfabccff9d71164431875081ba7ae3ab197525d6"
