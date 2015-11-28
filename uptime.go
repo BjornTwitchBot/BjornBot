@@ -16,12 +16,12 @@ func uptime(command *bot.Cmd) (msg string, err error) {
 	stream, err := client.Streams.Channel("bjorn_248")
 
 	if err != nil {
-		msg = fmt.Sprintf("Error retrieving stream information from Twitch API")
+		msg = "Error retrieving stream information from Twitch API"
 		return
 	}
 
 	if stream.Stream.Id == 0 {
-		msg = fmt.Sprintf("Stream is currently offline")
+		msg = "Stream is currently offline"
 		return
 	}
 
@@ -31,7 +31,7 @@ func uptime(command *bot.Cmd) (msg string, err error) {
 
 	// Remove millseconds from Duration, we don't need that level of precision
 	// This doesn't round, it just flat out removes everything after the dot
-	uptimeString := fmt.Sprintf(strings.Split(streamUptime.String(), ".")[0])
+	uptimeString := strings.Split(streamUptime.String(), ".")[0]
 
 	msg = fmt.Sprintf("Stream Uptime: %vs\n", uptimeString)
 
