@@ -17,11 +17,11 @@ func main() {
 	}
 
 	bot.Run(&bot.Config{
-		Server:   "irc.twitch.tv:6667",
+		Server:   "irc.chat.twitch.tv:6697",
 		Channels: strings.Split(os.Getenv("TWITCH_CHANNEL_NAME"), ","),
 		User:     "BjornTwitchBot",
 		Nick:     "bjorntwitchbot",
 		Password: os.Getenv("TWITCH_OAUTH_TOKEN"),
-		UseTLS:   false,
+		UseTLS:   true,
 		Debug:    os.Getenv("DEBUG") != ""})
 }
