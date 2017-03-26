@@ -13,7 +13,8 @@ func uptime(command *bot.Cmd) (msg string, err error) {
 
 	client := twitch.NewClient(&http.Client{})
 
-	stream, err := client.Streams.Channel("bjorn_248")
+	// Replace with Channel/User id for v5 API
+	stream, err := client.Streams.Channel("1903602")
 
 	if err != nil {
 		msg = "Error retrieving stream information from Twitch API"
