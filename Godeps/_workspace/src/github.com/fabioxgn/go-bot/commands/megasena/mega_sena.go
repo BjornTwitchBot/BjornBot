@@ -3,7 +3,7 @@ package megasena
 import (
 	"bytes"
 	"fmt"
-	"github.com/fabioxgn/go-bot"
+	"github.com/BjornTwitchBot/BjornBot/Godeps/_workspace/src/github.com/fabioxgn/go-bot"
 	"math/rand"
 	"sort"
 	"strings"

@@ -1,7 +1,7 @@
 package example
 
 import (
-	"github.com/fabioxgn/go-bot"
+	"github.com/BjornTwitchBot/BjornBot/Godeps/_workspace/src/github.com/fabioxgn/go-bot"
 )
 
 // From stackoverflow: http://stackoverflow.com/a/10030772

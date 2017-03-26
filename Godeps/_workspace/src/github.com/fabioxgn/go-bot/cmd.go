@@ -123,6 +123,8 @@ func messageReceived(channel, text, senderNick string, conn connection) {
 	}
 
 	switch command.Command {
+	case rankCommand:
+		rank(command, channel, senderNick, conn)
 	case helpCommand:
 		help(command, channel, senderNick, conn)
 	case joinCommand:
