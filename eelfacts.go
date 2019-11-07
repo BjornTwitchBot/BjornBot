@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/BjornTwitchBot/BjornBot/Godeps/_workspace/src/github.com/fabioxgn/go-bot"
 	"math/rand"
 	"time"
