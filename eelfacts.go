@@ -26,6 +26,7 @@ func eelfacts(command *bot.Cmd) (msg string, err error) {
 		"The electric eel is a South American electric fish. Despite the name, it is not an eel, but rather a knifefish.",
 		"Garden eel's live in burrows on the sea floor and get their name from their practice of poking their heads from their burrows while most of their bodies remain hidden. Since they tend to live in groups, the many eel heads 'growing' from the sea floor resemble the plants in a garden. The largest can be as much as an acre!",
 		"Reef-associated roving coral groupers have been observed to recruit giant morays to help them hunt. The invitation to hunt is initiated by head-shaking. This style of hunting may allow morays to flush prey from niches not accessible to groupers",
+		"Ribbon eels are carnivores, preying on small fish and other marine creatures.  They can attract their prey with their flared nostrils and then clamp down on them with their strong jaws and retreat into their burrows."
 	}
 
 	rand.Seed(time.Now().UnixNano())
