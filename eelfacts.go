@@ -29,7 +29,7 @@ func eelfacts(command *bot.Cmd) (msg string, err error) {
 	}
 
 	rand.Seed(time.Now().UnixNano())
-	msg = eelFacts[rand.Intn(19)]
+	msg = eelFacts[rand.Intn(len(eelfacts))]
 	return
 }
 
