@@ -7,7 +7,7 @@ import (
 )
 
 func eelfacts(command *bot.Cmd) (msg string, err error) {
-	eelFacts := [20]string{
+	eelFacts := [25]string{
 		"There are more than 700 different kinds, or species, of eels",
 		"Depending on the species, eels can grow to be anywhere between 4 inches to 11 1/2 feet long",
 		"Eels are smooth",
@@ -28,6 +28,11 @@ func eelfacts(command *bot.Cmd) (msg string, err error) {
 		"Reef-associated roving coral groupers have been observed to recruit giant morays to help them hunt. The invitation to hunt is initiated by head-shaking. This style of hunting may allow morays to flush prey from niches not accessible to groupers",
 		"Ribbon eels are carnivores, preying on small fish and other marine creatures.  They can attract their prey with their flared nostrils and then clamp down on them with their strong jaws and retreat into their burrows.",
 		"When you swim in a creek, and an eel bites your cheek, that’s a moray",
+		"In recent studies, it's been proven that most American eels will fail the marshmallow test when administered in a controlled environment",
+		"The Japanese freshwater eel self identifies as Yandere",
+		"In 1887 scientists had catalogued over 1000 species of eel. By the turn of the 20th century, the consensus was that most of them were 'just long fish'.",
+		"Eels and Platypus share a common ancestor.",
+		"The worlds longest recorded eel is named Philip and lives in West Virginia.",
 	}
 
 	rand.Seed(time.Now().UnixNano())
