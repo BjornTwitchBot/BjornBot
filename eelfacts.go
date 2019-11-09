@@ -7,7 +7,7 @@ import (
 )
 
 func eelfacts(command *bot.Cmd) (msg string, err error) {
-	eelFacts := [25]string{
+	eelFacts := [40]string{
 		"There are more than 700 different kinds, or species, of eels",
 		"Depending on the species, eels can grow to be anywhere between 4 inches to 11 1/2 feet long",
 		"Eels are smooth",
@@ -34,7 +34,7 @@ func eelfacts(command *bot.Cmd) (msg string, err error) {
 		"Eels and Platypus share a common ancestor.",
 		"The worlds longest recorded eel is named Philip and lives in West Virginia.",
 		"Because fishermen never caught anything they recognised as young eels, the life cycle of the eel was a mystery for a very long period of scientific history",
-		"The eels can propel themselves over wet grass and dig through wet sand to reach upstream headwaters and ponds", 
+		"The eels can propel themselves over wet grass and dig through wet sand to reach upstream headwaters and ponds",
 		"If you roll an eel down some stairs, it would move exactly like a slinky",
 		"Do not roll eels down stairs",
 		"Many eels dream of having wings",
@@ -46,7 +46,7 @@ func eelfacts(command *bot.Cmd) (msg string, err error) {
 		"Do you think eels dream?",
 		"I'm kinda not feeling eels any more.,..... haha just kidding",
 		"Eels can probably be stretched like a rubber band, they just look like it",
-		"Shoutout to my boy @EelectricMiguel, doing good work over there"
+		"Shoutout to my boy @EelectricMiguel, doing good work over there",
 	}
 
 	rand.Seed(time.Now().UnixNano())
