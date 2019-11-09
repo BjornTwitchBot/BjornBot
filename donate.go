@@ -5,7 +5,7 @@ import (
 )
 
 func donate(command *bot.Cmd) (msg string, err error) {
-	msg = "https://www.extra-life.org/index.cfm?fuseaction=donorDrive.team&teamID=48967"
+	msg = "https://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&participantID=387590"
 	return
 }
 
