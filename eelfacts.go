@@ -33,6 +33,20 @@ func eelfacts(command *bot.Cmd) (msg string, err error) {
 		"In 1887 scientists had catalogued over 1000 species of eel. By the turn of the 20th century, the consensus was that most of them were 'just long fish'.",
 		"Eels and Platypus share a common ancestor.",
 		"The worlds longest recorded eel is named Philip and lives in West Virginia.",
+		"Because fishermen never caught anything they recognised as young eels, the life cycle of the eel was a mystery for a very long period of scientific history",
+		"The eels can propel themselves over wet grass and dig through wet sand to reach upstream headwaters and ponds", 
+		"If you roll an eel down some stairs, it would move exactly like a slinky",
+		"Do not roll eels down stairs",
+		"Many eels dream of having wings",
+		"If you put enough eels in a room with a typewriter, they'll eventually write awehulawefnWBIEWQRO;bkjafdslbkjaweo;ihafn;ae",
+		"You can pet any eel if you're brave enough",
+		"Please look up garden eels, they're adorable",
+		"Am I an Eel? I can't see my legs",
+		"I'm not sure I've ever seen an eel",
+		"Do you think eels dream?",
+		"I'm kinda not feeling eels any more.,..... haha just kidding",
+		"Eels can probably be stretched like a rubber band, they just look like it",
+		"Shoutout to my boy @EelectricMiguel, doing good work over there"
 	}
 
 	rand.Seed(time.Now().UnixNano())
