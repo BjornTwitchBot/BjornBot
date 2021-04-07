@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/BjornTwitchBot/BjornBot/Godeps/_workspace/src/github.com/fabioxgn/go-bot"
+	"github.com/go-chat-bot/bot"
 )
 
 func sens(command *bot.Cmd) (msg string, err error) {

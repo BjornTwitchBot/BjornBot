@@ -1,7 +1,7 @@
 language: go
 sudo: required
 go:
-- 1.5.3
+- 1.x
 deploy:
   provider: heroku
   api_key:
