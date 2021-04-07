@@ -21,7 +21,6 @@ func uptime(command *bot.Cmd) (msg string, err error) {
 
 	resp, err := client.GetStreams(&helix.StreamsParams{
 		First:      1,
-		Language:   []string{"en"},
 		UserLogins: []string{"bjorn_248"},
 	})
 	if err != nil {
