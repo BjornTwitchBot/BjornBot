@@ -12,7 +12,8 @@ import (
 func uptime(command *bot.Cmd) (msg string, err error) {
 
 	client, err := helix.NewClient(&helix.Options{
-		ClientID: os.Getenv("GO_TWITCH_CLIENTID"),
+		ClientID:     os.Getenv("GO_TWITCH_CLIENTID"),
+		ClientSecret: os.Getenv("TWITCH_CLIENT_SECRET"),
 	})
 	if err != nil {
 		msg = "Error creating twitch api client"
