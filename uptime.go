@@ -20,6 +20,15 @@ func uptime(command *bot.Cmd) (msg string, err error) {
 		return
 	}
 
+	authResp, err := client.RequestAppAccessToken([]string{"user:read:email"})
+	if err != nil {
+		msg = "Error getting twitch access token"
+		return
+	}
+
+	// Set the access token on the client
+	client.SetAppAccessToken(authResp.Data.AccessToken)
+
 	resp, err := client.GetStreams(&helix.StreamsParams{
 		First:      1,
 		UserLogins: []string{"bjorn_248"},
