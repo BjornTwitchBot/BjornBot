@@ -2,31 +2,39 @@ package main
 
 import (
 	"fmt"
-	"github.com/BjornTwitchBot/BjornBot/Godeps/_workspace/src/github.com/fabioxgn/go-bot"
-	"github.com/BjornTwitchBot/BjornBot/Godeps/_workspace/src/github.com/mrshankly/go-twitch/twitch"
-	"net/http"
+	"github.com/go-chat-bot/bot"
+	"github.com/nicklaw5/helix"
+	"os"
 	"strings"
 	"time"
 )
 
 func uptime(command *bot.Cmd) (msg string, err error) {
 
-	client := twitch.NewClient(&http.Client{})
-
-	// Replace with Channel/User id for v5 API
-	stream, err := client.Streams.Channel("1903602")
-
+	client, err := helix.NewClient(&helix.Options{
+		ClientID: os.Getenv("GO_TWITCH_CLIENTID"),
+	})
 	if err != nil {
-		msg = "Error retrieving stream information from Twitch API"
+		msg = "Error creating twitch api client"
 		return
 	}
 
-	if stream.Stream.Id == 0 {
+	resp, err := client.GetStreams(&helix.StreamsParams{
+		First:      1,
+		Language:   []string{"en"},
+		UserLogins: []string{"bjorn_248"},
+	})
+	if err != nil {
+		msg = "Error retrieving stream information from twitch API"
+		return
+	}
+
+	if len(resp.Data.Streams) == 0 {
 		msg = "Stream is currently offline"
 		return
 	}
 
-	streamStartTime, _ := time.Parse(time.RFC3339, stream.Stream.CreatedAt)
+	streamStartTime := resp.Data.Streams[0].StartedAt
 
 	streamUptime := time.Since(streamStartTime)
 

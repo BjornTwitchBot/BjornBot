@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/BjornTwitchBot/BjornBot/Godeps/_workspace/src/github.com/fabioxgn/go-bot"
+	"github.com/go-chat-bot/bot/irc"
 	"log"
 	"os"
 	"strings"
@@ -16,7 +16,7 @@ func main() {
 		log.Fatal("TWITCH_CHANNEL_NAME not set")
 	}
 
-	bot.Run(&bot.Config{
+	irc.Run(&irc.Config{
 		Server:   "irc.chat.twitch.tv:6697",
 		Channels: strings.Split(os.Getenv("TWITCH_CHANNEL_NAME"), ","),
 		User:     "BjornTwitchBot",
